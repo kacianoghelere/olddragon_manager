@@ -1,0 +1,53 @@
+<%= form_for(@undead_bane) do |f| %>
+  <% if @undead_bane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@undead_bane.errors.count, "error") %> prohibited this undead_bane from being saved:</h2>
+
+      <ul>
+      <% @undead_bane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :skelleton_mod %><br>
+    <%= f.text_field :skelleton_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :zombie_mod %><br>
+    <%= f.text_field :zombie_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :ghoul_mod %><br>
+    <%= f.text_field :ghoul_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :inhuman_mod %><br>
+    <%= f.text_field :inhuman_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :aparition_mod %><br>
+    <%= f.text_field :aparition_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :mummy_mod %><br>
+    <%= f.text_field :mummy_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :specter_mod %><br>
+    <%= f.text_field :specter_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :vampire_mod %><br>
+    <%= f.text_field :vampire_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

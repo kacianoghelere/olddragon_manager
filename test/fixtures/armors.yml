@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  armor_class: 1
+  movement_reduction: 1
+  price: 9.99
+  alignment_id: 
+  armor_type_id: 
+  origin_id: 
+  user_id: 
+
+two:
+  name: MyString
+  description: MyString
+  armor_class: 1
+  movement_reduction: 1
+  price: 9.99
+  alignment_id: 
+  armor_type_id: 
+  origin_id: 
+  user_id: 

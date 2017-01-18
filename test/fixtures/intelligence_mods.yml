@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 1
+  languages_mod: 1
+  learn_magic_mod: 1
+  magic_circle_1_mod: 1
+  magic_circle_2_mod: 1
+  magic_circle_3_mod: 1
+  magic_circle_4_mod: 1
+  magic_circle_5_mod: 1
+  magic_circle_6_mod: 1
+  magic_circle_7_mod: 1
+  magic_circle_8_mod: 1
+  magic_circle_9_mod: 1
+
+two:
+  value: 1
+  languages_mod: 1
+  learn_magic_mod: 1
+  magic_circle_1_mod: 1
+  magic_circle_2_mod: 1
+  magic_circle_3_mod: 1
+  magic_circle_4_mod: 1
+  magic_circle_5_mod: 1
+  magic_circle_6_mod: 1
+  magic_circle_7_mod: 1
+  magic_circle_8_mod: 1
+  magic_circle_9_mod: 1

@@ -1,0 +1,29 @@
+<%= form_for(@strength_mod) do |f| %>
+  <% if @strength_mod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@strength_mod.errors.count, "error") %> prohibited this strength_mod from being saved:</h2>
+
+      <ul>
+      <% @strength_mod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_mod %><br>
+    <%= f.number_field :attack_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :damage_mod %><br>
+    <%= f.number_field :damage_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

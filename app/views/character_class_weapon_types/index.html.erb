@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Class Weapon Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Character class</th>
+      <th>Weapon type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_class_weapon_types.each do |character_class_weapon_type| %>
+      <tr>
+        <td><%= character_class_weapon_type.character_class %></td>
+        <td><%= character_class_weapon_type.weapon_type %></td>
+        <td><%= link_to 'Show', character_class_weapon_type %></td>
+        <td><%= link_to 'Edit', edit_character_class_weapon_type_path(character_class_weapon_type) %></td>
+        <td><%= link_to 'Destroy', character_class_weapon_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character class weapon type', new_character_class_weapon_type_path %>

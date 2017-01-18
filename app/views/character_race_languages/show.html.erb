@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character race:</strong>
+  <%= @character_race_language.character_race %>
+</p>
+
+<p>
+  <strong>Language type:</strong>
+  <%= @character_race_language.language_type %>
+</p>
+
+<%= link_to 'Edit', edit_character_race_language_path(@character_race_language) %> |
+<%= link_to 'Back', character_race_languages_path %>

@@ -1,0 +1,2 @@
+json.extract! character_class_type, :id, :name, :magic, :protection, :key_attr, :can_bane_undead, :has_thief_talents, :created_at, :updated_at
+json.url character_class_type_url(character_class_type, format: :json)

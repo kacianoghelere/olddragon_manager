@@ -1,0 +1,1 @@
+json.array! @character_class_evolutions, partial: 'character_class_evolutions/character_class_evolution', as: :character_class_evolution

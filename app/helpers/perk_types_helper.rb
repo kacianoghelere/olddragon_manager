@@ -1,0 +1,2 @@
+module PerkTypesHelper
+end

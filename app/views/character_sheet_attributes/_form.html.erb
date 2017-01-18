@@ -1,0 +1,41 @@
+<%= form_for(@character_sheet_attribute) do |f| %>
+  <% if @character_sheet_attribute.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_sheet_attribute.errors.count, "error") %> prohibited this character_sheet_attribute from being saved:</h2>
+
+      <ul>
+      <% @character_sheet_attribute.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.number_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :dexterity %><br>
+    <%= f.number_field :dexterity %>
+  </div>
+  <div class="field">
+    <%= f.label :constitution %><br>
+    <%= f.number_field :constitution %>
+  </div>
+  <div class="field">
+    <%= f.label :intelligence %><br>
+    <%= f.number_field :intelligence %>
+  </div>
+  <div class="field">
+    <%= f.label :wisdom %><br>
+    <%= f.number_field :wisdom %>
+  </div>
+  <div class="field">
+    <%= f.label :charisma %><br>
+    <%= f.number_field :charisma %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

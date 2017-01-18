@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character race:</strong>
+  <%= @character_race_weapon.character_race %>
+</p>
+
+<p>
+  <strong>Weapon type:</strong>
+  <%= @character_race_weapon.weapon_type %>
+</p>
+
+<%= link_to 'Edit', edit_character_race_weapon_path(@character_race_weapon) %> |
+<%= link_to 'Back', character_race_weapons_path %>

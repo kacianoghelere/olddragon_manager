@@ -1,0 +1,49 @@
+<%= form_for(@character_sheet) do |f| %>
+  <% if @character_sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_sheet.errors.count, "error") %> prohibited this character_sheet from being saved:</h2>
+
+      <ul>
+      <% @character_sheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :character_class_id %><br>
+    <%= f.text_field :character_class_id %>
+  </div>
+  <div class="field">
+    <%= f.label :character_race_id %><br>
+    <%= f.text_field :character_race_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module WisdomModsHelper
+end

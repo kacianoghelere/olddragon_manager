@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  initiative: 1
+  ranged: false
+  range: 1
+  damage: MyString
+  weight: 9.99
+  price: 9.99
+  alignment_id: 
+  dice_id: 
+  material_type_id: 
+  origin_id: 
+  user_id: 
+  weapon_type_id: 
+
+two:
+  name: MyString
+  description: MyString
+  initiative: 1
+  ranged: false
+  range: 1
+  damage: MyString
+  weight: 9.99
+  price: 9.99
+  alignment_id: 
+  dice_id: 
+  material_type_id: 
+  origin_id: 
+  user_id: 
+  weapon_type_id: 

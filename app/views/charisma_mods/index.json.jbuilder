@@ -1,0 +1,1 @@
+json.array! @charisma_mods, partial: 'charisma_mods/charisma_mod', as: :charisma_mod

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Effect Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @effect_types.each do |effect_type| %>
+      <tr>
+        <td><%= effect_type.name %></td>
+        <td><%= link_to 'Show', effect_type %></td>
+        <td><%= link_to 'Edit', edit_effect_type_path(effect_type) %></td>
+        <td><%= link_to 'Destroy', effect_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Effect type', new_effect_type_path %>

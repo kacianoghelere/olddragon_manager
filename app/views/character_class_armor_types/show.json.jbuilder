@@ -1,0 +1,1 @@
+json.partial! "character_class_armor_types/character_class_armor_type", character_class_armor_type: @character_class_armor_type

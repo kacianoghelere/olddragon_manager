@@ -1,0 +1,1 @@
+json.partial! "character_class_evolutions/character_class_evolution", character_class_evolution: @character_class_evolution

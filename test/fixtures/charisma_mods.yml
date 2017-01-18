@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 1
+  followers_mod: 1
+  reaction_mod: 1
+  undead_mod: MyString
+
+two:
+  value: 1
+  followers_mod: 1
+  reaction_mod: 1
+  undead_mod: MyString

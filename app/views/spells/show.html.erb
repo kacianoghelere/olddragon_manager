@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @spell.name %>
+</p>
+
+<p>
+  <strong>Range:</strong>
+  <%= @spell.range %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @spell.duration %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @spell.description %>
+</p>
+
+<p>
+  <strong>Effect:</strong>
+  <%= @spell.effect %>
+</p>
+
+<p>
+  <strong>Element type:</strong>
+  <%= @spell.element_type %>
+</p>
+
+<p>
+  <strong>Spell circle:</strong>
+  <%= @spell.spell_circle %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @spell.user %>
+</p>
+
+<%= link_to 'Edit', edit_spell_path(@spell) %> |
+<%= link_to 'Back', spells_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  str_mod: 1
+  dex_mod: 1
+  cons_mod: 1
+  int_mod: 1
+  wis_mod: 1
+  char_mod: 1
+  character_classes_id: 
+
+two:
+  str_mod: 1
+  dex_mod: 1
+  cons_mod: 1
+  int_mod: 1
+  wis_mod: 1
+  char_mod: 1
+  character_classes_id: 

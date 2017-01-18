@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Campain:</strong>
+  <%= @campain_member.campain %>
+</p>
+
+<p>
+  <strong>Character sheet:</strong>
+  <%= @campain_member.character_sheet %>
+</p>
+
+<p>
+  <strong>Idactive:</strong>
+  <%= @campain_member.idactive %>
+</p>
+
+<%= link_to 'Edit', edit_campain_member_path(@campain_member) %> |
+<%= link_to 'Back', campain_members_path %>

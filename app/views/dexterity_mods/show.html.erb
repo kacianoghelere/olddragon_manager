@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @dexterity_mod.value %>
+</p>
+
+<p>
+  <strong>Attack mod:</strong>
+  <%= @dexterity_mod.attack_mod %>
+</p>
+
+<p>
+  <strong>Surprise mod:</strong>
+  <%= @dexterity_mod.surprise_mod %>
+</p>
+
+<p>
+  <strong>Armor class mod:</strong>
+  <%= @dexterity_mod.armor_class_mod %>
+</p>
+
+<p>
+  <strong>Protection mod:</strong>
+  <%= @dexterity_mod.protection_mod %>
+</p>
+
+<p>
+  <strong>Find traps mod:</strong>
+  <%= @dexterity_mod.find_traps_mod %>
+</p>
+
+<p>
+  <strong>Silent movement mod:</strong>
+  <%= @dexterity_mod.silent_movement_mod %>
+</p>
+
+<p>
+  <strong>Lockpick mod:</strong>
+  <%= @dexterity_mod.lockpick_mod %>
+</p>
+
+<p>
+  <strong>Stealth mod:</strong>
+  <%= @dexterity_mod.stealth_mod %>
+</p>
+
+<p>
+  <strong>Pickpocket mod:</strong>
+  <%= @dexterity_mod.pickpocket_mod %>
+</p>
+
+<%= link_to 'Edit', edit_dexterity_mod_path(@dexterity_mod) %> |
+<%= link_to 'Back', dexterity_mods_path %>

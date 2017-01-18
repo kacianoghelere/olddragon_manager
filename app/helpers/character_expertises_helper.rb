@@ -1,0 +1,2 @@
+module CharacterExpertisesHelper
+end

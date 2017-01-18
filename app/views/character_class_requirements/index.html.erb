@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Class Requirements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Str mod</th>
+      <th>Dex mod</th>
+      <th>Cons mod</th>
+      <th>Int mod</th>
+      <th>Wis mod</th>
+      <th>Char mod</th>
+      <th>Character classes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_class_requirements.each do |character_class_requirement| %>
+      <tr>
+        <td><%= character_class_requirement.str_mod %></td>
+        <td><%= character_class_requirement.dex_mod %></td>
+        <td><%= character_class_requirement.cons_mod %></td>
+        <td><%= character_class_requirement.int_mod %></td>
+        <td><%= character_class_requirement.wis_mod %></td>
+        <td><%= character_class_requirement.char_mod %></td>
+        <td><%= character_class_requirement.character_classes %></td>
+        <td><%= link_to 'Show', character_class_requirement %></td>
+        <td><%= link_to 'Edit', edit_character_class_requirement_path(character_class_requirement) %></td>
+        <td><%= link_to 'Destroy', character_class_requirement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character class requirement', new_character_class_requirement_path %>

@@ -1,0 +1,1 @@
+json.array! @spell_circles, partial: 'spell_circles/spell_circle', as: :spell_circle

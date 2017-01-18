@@ -1,0 +1,45 @@
+<%= form_for(@character_class_requirement) do |f| %>
+  <% if @character_class_requirement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_class_requirement.errors.count, "error") %> prohibited this character_class_requirement from being saved:</h2>
+
+      <ul>
+      <% @character_class_requirement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :str_mod %><br>
+    <%= f.number_field :str_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :dex_mod %><br>
+    <%= f.number_field :dex_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :cons_mod %><br>
+    <%= f.number_field :cons_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :int_mod %><br>
+    <%= f.number_field :int_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :wis_mod %><br>
+    <%= f.number_field :wis_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :char_mod %><br>
+    <%= f.number_field :char_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :character_classes_id %><br>
+    <%= f.text_field :character_classes_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

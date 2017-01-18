@@ -1,0 +1,2 @@
+json.extract! undead_bane, :id, :level, :skelleton_mod, :zombie_mod, :ghoul_mod, :inhuman_mod, :aparition_mod, :mummy_mod, :specter_mod, :vampire_mod, :created_at, :updated_at
+json.url undead_bane_url(undead_bane, format: :json)

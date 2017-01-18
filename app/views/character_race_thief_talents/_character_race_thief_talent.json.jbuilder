@@ -1,0 +1,2 @@
+json.extract! character_race_thief_talent, :id, :id, :lockpick_mod, :find_traps_mod, :climb_mod, :silent_movement_mod, :stealth_mod, :pickpocket_mod, :hear_noises_mod, :backstab_mod, :character_race_id, :created_at, :updated_at
+json.url character_race_thief_talent_url(character_race_thief_talent, format: :json)

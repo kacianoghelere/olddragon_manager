@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Class Evolutions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Exp</th>
+      <th>Life amount</th>
+      <th>Plus life</th>
+      <th>Attack base</th>
+      <th>Attack base2</th>
+      <th>Protection mod</th>
+      <th>Character class</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_class_evolutions.each do |character_class_evolution| %>
+      <tr>
+        <td><%= character_class_evolution.level %></td>
+        <td><%= character_class_evolution.exp %></td>
+        <td><%= character_class_evolution.life_amount %></td>
+        <td><%= character_class_evolution.plus_life %></td>
+        <td><%= character_class_evolution.attack_base %></td>
+        <td><%= character_class_evolution.attack_base2 %></td>
+        <td><%= character_class_evolution.protection_mod %></td>
+        <td><%= character_class_evolution.character_class %></td>
+        <td><%= link_to 'Show', character_class_evolution %></td>
+        <td><%= link_to 'Edit', edit_character_class_evolution_path(character_class_evolution) %></td>
+        <td><%= link_to 'Destroy', character_class_evolution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character class evolution', new_character_class_evolution_path %>

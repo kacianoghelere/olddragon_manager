@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character race:</strong>
+  <%= @character_race_perk.character_race %>
+</p>
+
+<p>
+  <strong>Perk:</strong>
+  <%= @character_race_perk.perk %>
+</p>
+
+<%= link_to 'Edit', edit_character_race_perk_path(@character_race_perk) %> |
+<%= link_to 'Back', character_race_perks_path %>

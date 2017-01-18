@@ -1,0 +1,73 @@
+<%= form_for(@weapon) do |f| %>
+  <% if @weapon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@weapon.errors.count, "error") %> prohibited this weapon from being saved:</h2>
+
+      <ul>
+      <% @weapon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :initiative %><br>
+    <%= f.number_field :initiative %>
+  </div>
+  <div class="field">
+    <%= f.label :ranged %><br>
+    <%= f.check_box :ranged %>
+  </div>
+  <div class="field">
+    <%= f.label :range %><br>
+    <%= f.number_field :range %>
+  </div>
+  <div class="field">
+    <%= f.label :damage %><br>
+    <%= f.text_field :damage %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :alignment_id %><br>
+    <%= f.text_field :alignment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dice_id %><br>
+    <%= f.text_field :dice_id %>
+  </div>
+  <div class="field">
+    <%= f.label :material_type_id %><br>
+    <%= f.text_field :material_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :origin_id %><br>
+    <%= f.text_field :origin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :weapon_type_id %><br>
+    <%= f.text_field :weapon_type_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

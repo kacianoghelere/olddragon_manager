@@ -1,0 +1,1 @@
+json.partial! "spell_circles/spell_circle", spell_circle: @spell_circle

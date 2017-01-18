@@ -1,0 +1,33 @@
+<%= form_for(@charisma_mod) do |f| %>
+  <% if @charisma_mod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@charisma_mod.errors.count, "error") %> prohibited this charisma_mod from being saved:</h2>
+
+      <ul>
+      <% @charisma_mod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :followers_mod %><br>
+    <%= f.number_field :followers_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :reaction_mod %><br>
+    <%= f.number_field :reaction_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :undead_mod %><br>
+    <%= f.text_field :undead_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

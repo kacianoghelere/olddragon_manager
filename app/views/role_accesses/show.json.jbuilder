@@ -1,0 +1,1 @@
+json.partial! "role_accesses/role_access", role_access: @role_access

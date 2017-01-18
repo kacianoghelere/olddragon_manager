@@ -1,0 +1,2 @@
+module UndeadBanesHelper
+end

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Journals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Current level</th>
+      <th>Current exp</th>
+      <th>Idactive</th>
+      <th>Inc date</th>
+      <th>Character sheet</th>
+      <th>Alignment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_journals.each do |character_journal| %>
+      <tr>
+        <td><%= character_journal.current_level %></td>
+        <td><%= character_journal.current_exp %></td>
+        <td><%= character_journal.idactive %></td>
+        <td><%= character_journal.inc_date %></td>
+        <td><%= character_journal.character_sheet %></td>
+        <td><%= character_journal.alignment %></td>
+        <td><%= link_to 'Show', character_journal %></td>
+        <td><%= link_to 'Edit', edit_character_journal_path(character_journal) %></td>
+        <td><%= link_to 'Destroy', character_journal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character journal', new_character_journal_path %>

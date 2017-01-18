@@ -1,0 +1,1 @@
+json.array! @character_race_skills, partial: 'character_race_skills/character_race_skill', as: :character_race_skill

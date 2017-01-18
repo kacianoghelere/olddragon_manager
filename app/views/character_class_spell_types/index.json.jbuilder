@@ -1,0 +1,1 @@
+json.array! @character_class_spell_types, partial: 'character_class_spell_types/character_class_spell_type', as: :character_class_spell_type

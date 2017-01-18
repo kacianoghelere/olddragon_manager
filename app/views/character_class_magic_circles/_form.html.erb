@@ -1,0 +1,61 @@
+<%= form_for(@character_class_magic_circle) do |f| %>
+  <% if @character_class_magic_circle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_class_magic_circle.errors.count, "error") %> prohibited this character_class_magic_circle from being saved:</h2>
+
+      <ul>
+      <% @character_class_magic_circle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_1 %><br>
+    <%= f.number_field :magic_circle_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_2 %><br>
+    <%= f.number_field :magic_circle_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_3 %><br>
+    <%= f.number_field :magic_circle_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_4 %><br>
+    <%= f.number_field :magic_circle_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_5 %><br>
+    <%= f.number_field :magic_circle_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_6 %><br>
+    <%= f.number_field :magic_circle_6 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_7 %><br>
+    <%= f.number_field :magic_circle_7 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_8 %><br>
+    <%= f.number_field :magic_circle_8 %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_9 %><br>
+    <%= f.number_field :magic_circle_9 %>
+  </div>
+  <div class="field">
+    <%= f.label :character_class_id %><br>
+    <%= f.text_field :character_class_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

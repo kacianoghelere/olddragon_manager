@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Perks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Perk type</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @perks.each do |perk| %>
+      <tr>
+        <td><%= perk.name %></td>
+        <td><%= perk.description %></td>
+        <td><%= perk.perk_type %></td>
+        <td><%= perk.user %></td>
+        <td><%= link_to 'Show', perk %></td>
+        <td><%= link_to 'Edit', edit_perk_path(perk) %></td>
+        <td><%= link_to 'Destroy', perk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Perk', new_perk_path %>

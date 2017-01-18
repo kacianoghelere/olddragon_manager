@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Armor type:</strong>
+  <%= @character_race_armor.armor_type %>
+</p>
+
+<p>
+  <strong>Character race:</strong>
+  <%= @character_race_armor.character_race %>
+</p>
+
+<%= link_to 'Edit', edit_character_race_armor_path(@character_race_armor) %> |
+<%= link_to 'Back', character_race_armors_path %>

@@ -1,0 +1,1 @@
+json.partial! "campain_members/campain_member", campain_member: @campain_member

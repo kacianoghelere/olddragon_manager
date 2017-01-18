@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  min_height: 9.99
+  max_height: 9.99
+  min_weight: 9.99
+  max_weight: 9.99
+  maturity: 1
+  max_age: 1
+  movement_base: 1
+  armor_class_mod: 1
+  str_mod: 1
+  dex_mod: 1
+  cons_mod: 1
+  int_mod: 1
+  wis_mod: 1
+  char_mod: 1
+  alignment_id: 
+  dice_id: 
+  user_id: 
+
+two:
+  name: MyString
+  min_height: 9.99
+  max_height: 9.99
+  min_weight: 9.99
+  max_weight: 9.99
+  maturity: 1
+  max_age: 1
+  movement_base: 1
+  armor_class_mod: 1
+  str_mod: 1
+  dex_mod: 1
+  cons_mod: 1
+  int_mod: 1
+  wis_mod: 1
+  char_mod: 1
+  alignment_id: 
+  dice_id: 
+  user_id: 

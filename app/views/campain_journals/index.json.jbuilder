@@ -1,0 +1,1 @@
+json.array! @campain_journals, partial: 'campain_journals/campain_journal', as: :campain_journal

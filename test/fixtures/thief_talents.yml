@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  lockpick: 1
+  find_traps: 1
+  climb: 1
+  silent_movement: 1
+  stealth: 1
+  pickpocket: 1
+  hear_noises: MyString
+  backstab: MyString
+
+two:
+  level: 1
+  lockpick: 1
+  find_traps: 1
+  climb: 1
+  silent_movement: 1
+  stealth: 1
+  pickpocket: 1
+  hear_noises: MyString
+  backstab: MyString

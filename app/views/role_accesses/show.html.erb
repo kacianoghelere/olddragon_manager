@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id menu item:</strong>
+  <%= @role_access.id_menu_item %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @role_access.role %>
+</p>
+
+<%= link_to 'Edit', edit_role_access_path(@role_access) %> |
+<%= link_to 'Back', role_accesses_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Strength Mods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Attack mod</th>
+      <th>Damage mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @strength_mods.each do |strength_mod| %>
+      <tr>
+        <td><%= strength_mod.value %></td>
+        <td><%= strength_mod.attack_mod %></td>
+        <td><%= strength_mod.damage_mod %></td>
+        <td><%= link_to 'Show', strength_mod %></td>
+        <td><%= link_to 'Edit', edit_strength_mod_path(strength_mod) %></td>
+        <td><%= link_to 'Destroy', strength_mod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Strength mod', new_strength_mod_path %>

@@ -1,0 +1,53 @@
+<%= form_for(@armor) do |f| %>
+  <% if @armor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@armor.errors.count, "error") %> prohibited this armor from being saved:</h2>
+
+      <ul>
+      <% @armor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :armor_class %><br>
+    <%= f.number_field :armor_class %>
+  </div>
+  <div class="field">
+    <%= f.label :movement_reduction %><br>
+    <%= f.number_field :movement_reduction %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :alignment_id %><br>
+    <%= f.text_field :alignment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :armor_type_id %><br>
+    <%= f.text_field :armor_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :origin_id %><br>
+    <%= f.text_field :origin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

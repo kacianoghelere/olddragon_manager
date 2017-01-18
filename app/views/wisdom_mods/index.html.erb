@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Wisdom Mods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Protection mod</th>
+      <th>Magic cicle 1 mod</th>
+      <th>Magic cicle 2 mod</th>
+      <th>Magic cicle 3 mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wisdom_mods.each do |wisdom_mod| %>
+      <tr>
+        <td><%= wisdom_mod.value %></td>
+        <td><%= wisdom_mod.protection_mod %></td>
+        <td><%= wisdom_mod.magic_cicle_1_mod %></td>
+        <td><%= wisdom_mod.magic_cicle_2_mod %></td>
+        <td><%= wisdom_mod.magic_cicle_3_mod %></td>
+        <td><%= link_to 'Show', wisdom_mod %></td>
+        <td><%= link_to 'Edit', edit_wisdom_mod_path(wisdom_mod) %></td>
+        <td><%= link_to 'Destroy', wisdom_mod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wisdom mod', new_wisdom_mod_path %>

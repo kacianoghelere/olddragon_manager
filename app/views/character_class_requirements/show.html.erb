@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Str mod:</strong>
+  <%= @character_class_requirement.str_mod %>
+</p>
+
+<p>
+  <strong>Dex mod:</strong>
+  <%= @character_class_requirement.dex_mod %>
+</p>
+
+<p>
+  <strong>Cons mod:</strong>
+  <%= @character_class_requirement.cons_mod %>
+</p>
+
+<p>
+  <strong>Int mod:</strong>
+  <%= @character_class_requirement.int_mod %>
+</p>
+
+<p>
+  <strong>Wis mod:</strong>
+  <%= @character_class_requirement.wis_mod %>
+</p>
+
+<p>
+  <strong>Char mod:</strong>
+  <%= @character_class_requirement.char_mod %>
+</p>
+
+<p>
+  <strong>Character classes:</strong>
+  <%= @character_class_requirement.character_classes %>
+</p>
+
+<%= link_to 'Edit', edit_character_class_requirement_path(@character_class_requirement) %> |
+<%= link_to 'Back', character_class_requirements_path %>

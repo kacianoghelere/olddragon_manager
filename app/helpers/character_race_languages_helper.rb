@@ -1,0 +1,2 @@
+module CharacterRaceLanguagesHelper
+end

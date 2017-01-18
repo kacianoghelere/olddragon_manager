@@ -1,0 +1,1 @@
+json.partial! "character_class_requirements/character_class_requirement", character_class_requirement: @character_class_requirement

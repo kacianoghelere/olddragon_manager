@@ -1,0 +1,1 @@
+json.partial! "character_class_magic_circles/character_class_magic_circle", character_class_magic_circle: @character_class_magic_circle

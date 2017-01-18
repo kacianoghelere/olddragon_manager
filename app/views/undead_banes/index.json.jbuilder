@@ -1,0 +1,1 @@
+json.array! @undead_banes, partial: 'undead_banes/undead_bane', as: :undead_bane

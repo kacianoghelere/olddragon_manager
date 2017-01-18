@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @character_class_type.name %>
+</p>
+
+<p>
+  <strong>Magic:</strong>
+  <%= @character_class_type.magic %>
+</p>
+
+<p>
+  <strong>Protection:</strong>
+  <%= @character_class_type.protection %>
+</p>
+
+<p>
+  <strong>Key attr:</strong>
+  <%= @character_class_type.key_attr %>
+</p>
+
+<p>
+  <strong>Can bane undead:</strong>
+  <%= @character_class_type.can_bane_undead %>
+</p>
+
+<p>
+  <strong>Has thief talents:</strong>
+  <%= @character_class_type.has_thief_talents %>
+</p>
+
+<%= link_to 'Edit', edit_character_class_type_path(@character_class_type) %> |
+<%= link_to 'Back', character_class_types_path %>

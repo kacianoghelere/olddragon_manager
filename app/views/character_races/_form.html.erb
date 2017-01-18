@@ -1,0 +1,89 @@
+<%= form_for(@character_race) do |f| %>
+  <% if @character_race.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_race.errors.count, "error") %> prohibited this character_race from being saved:</h2>
+
+      <ul>
+      <% @character_race.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :min_height %><br>
+    <%= f.text_field :min_height %>
+  </div>
+  <div class="field">
+    <%= f.label :max_height %><br>
+    <%= f.text_field :max_height %>
+  </div>
+  <div class="field">
+    <%= f.label :min_weight %><br>
+    <%= f.text_field :min_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :max_weight %><br>
+    <%= f.text_field :max_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :maturity %><br>
+    <%= f.number_field :maturity %>
+  </div>
+  <div class="field">
+    <%= f.label :max_age %><br>
+    <%= f.number_field :max_age %>
+  </div>
+  <div class="field">
+    <%= f.label :movement_base %><br>
+    <%= f.number_field :movement_base %>
+  </div>
+  <div class="field">
+    <%= f.label :armor_class_mod %><br>
+    <%= f.number_field :armor_class_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :str_mod %><br>
+    <%= f.number_field :str_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :dex_mod %><br>
+    <%= f.number_field :dex_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :cons_mod %><br>
+    <%= f.number_field :cons_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :int_mod %><br>
+    <%= f.number_field :int_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :wis_mod %><br>
+    <%= f.number_field :wis_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :char_mod %><br>
+    <%= f.number_field :char_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :alignment_id %><br>
+    <%= f.text_field :alignment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dice_id %><br>
+    <%= f.text_field :dice_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @weapon.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @weapon.description %>
+</p>
+
+<p>
+  <strong>Initiative:</strong>
+  <%= @weapon.initiative %>
+</p>
+
+<p>
+  <strong>Ranged:</strong>
+  <%= @weapon.ranged %>
+</p>
+
+<p>
+  <strong>Range:</strong>
+  <%= @weapon.range %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @weapon.damage %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @weapon.weight %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @weapon.price %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @weapon.alignment %>
+</p>
+
+<p>
+  <strong>Dice:</strong>
+  <%= @weapon.dice %>
+</p>
+
+<p>
+  <strong>Material type:</strong>
+  <%= @weapon.material_type %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @weapon.origin %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @weapon.user %>
+</p>
+
+<p>
+  <strong>Weapon type:</strong>
+  <%= @weapon.weapon_type %>
+</p>
+
+<%= link_to 'Edit', edit_weapon_path(@weapon) %> |
+<%= link_to 'Back', weapons_path %>

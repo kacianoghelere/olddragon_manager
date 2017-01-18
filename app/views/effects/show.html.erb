@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @effect.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @effect.description %>
+</p>
+
+<p>
+  <strong>Effect type:</strong>
+  <%= @effect.effect_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @effect.user %>
+</p>
+
+<%= link_to 'Edit', edit_effect_path(@effect) %> |
+<%= link_to 'Back', effects_path %>

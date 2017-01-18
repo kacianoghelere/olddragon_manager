@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Race Thief Talents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Lockpick mod</th>
+      <th>Find traps mod</th>
+      <th>Climb mod</th>
+      <th>Silent movement mod</th>
+      <th>Stealth mod</th>
+      <th>Pickpocket mod</th>
+      <th>Hear noises mod</th>
+      <th>Backstab mod</th>
+      <th>Character race</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_race_thief_talents.each do |character_race_thief_talent| %>
+      <tr>
+        <td><%= character_race_thief_talent.id %></td>
+        <td><%= character_race_thief_talent.lockpick_mod %></td>
+        <td><%= character_race_thief_talent.find_traps_mod %></td>
+        <td><%= character_race_thief_talent.climb_mod %></td>
+        <td><%= character_race_thief_talent.silent_movement_mod %></td>
+        <td><%= character_race_thief_talent.stealth_mod %></td>
+        <td><%= character_race_thief_talent.pickpocket_mod %></td>
+        <td><%= character_race_thief_talent.hear_noises_mod %></td>
+        <td><%= character_race_thief_talent.backstab_mod %></td>
+        <td><%= character_race_thief_talent.character_race %></td>
+        <td><%= link_to 'Show', character_race_thief_talent %></td>
+        <td><%= link_to 'Edit', edit_character_race_thief_talent_path(character_race_thief_talent) %></td>
+        <td><%= link_to 'Destroy', character_race_thief_talent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character race thief talent', new_character_race_thief_talent_path %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Thief Talents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Lockpick</th>
+      <th>Find traps</th>
+      <th>Climb</th>
+      <th>Silent movement</th>
+      <th>Stealth</th>
+      <th>Pickpocket</th>
+      <th>Hear noises</th>
+      <th>Backstab</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thief_talents.each do |thief_talent| %>
+      <tr>
+        <td><%= thief_talent.level %></td>
+        <td><%= thief_talent.lockpick %></td>
+        <td><%= thief_talent.find_traps %></td>
+        <td><%= thief_talent.climb %></td>
+        <td><%= thief_talent.silent_movement %></td>
+        <td><%= thief_talent.stealth %></td>
+        <td><%= thief_talent.pickpocket %></td>
+        <td><%= thief_talent.hear_noises %></td>
+        <td><%= thief_talent.backstab %></td>
+        <td><%= link_to 'Show', thief_talent %></td>
+        <td><%= link_to 'Edit', edit_thief_talent_path(thief_talent) %></td>
+        <td><%= link_to 'Destroy', thief_talent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thief talent', new_thief_talent_path %>

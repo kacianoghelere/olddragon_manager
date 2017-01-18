@@ -1,0 +1,1 @@
+json.array! @perk_types, partial: 'perk_types/perk_type', as: :perk_type

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 1
+  attack_mod: 1
+  surprise_mod: 1
+  armor_class_mod: 1
+  protection_mod: 1
+  find_traps_mod: 1
+  silent_movement_mod: 1
+  lockpick_mod: 1
+  stealth_mod: 1
+  pickpocket_mod: 1
+
+two:
+  value: 1
+  attack_mod: 1
+  surprise_mod: 1
+  armor_class_mod: 1
+  protection_mod: 1
+  find_traps_mod: 1
+  silent_movement_mod: 1
+  lockpick_mod: 1
+  stealth_mod: 1
+  pickpocket_mod: 1

@@ -1,0 +1,2 @@
+json.extract! character_sheet, :id, :name, :weight, :height, :age, :description, :character_class_id, :character_race_id, :user_id, :created_at, :updated_at
+json.url character_sheet_url(character_sheet, format: :json)

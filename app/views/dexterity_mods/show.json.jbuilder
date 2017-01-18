@@ -1,0 +1,1 @@
+json.partial! "dexterity_mods/dexterity_mod", dexterity_mod: @dexterity_mod

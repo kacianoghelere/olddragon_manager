@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Campains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Start date</th>
+      <th>Conclusion date</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campains.each do |campain| %>
+      <tr>
+        <td><%= campain.title %></td>
+        <td><%= campain.description %></td>
+        <td><%= campain.start_date %></td>
+        <td><%= campain.conclusion_date %></td>
+        <td><%= campain.user %></td>
+        <td><%= link_to 'Show', campain %></td>
+        <td><%= link_to 'Edit', edit_campain_path(campain) %></td>
+        <td><%= link_to 'Destroy', campain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Campain', new_campain_path %>

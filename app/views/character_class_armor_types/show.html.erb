@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @character_class_armor_type.character_class %>
+</p>
+
+<p>
+  <strong>Armor type:</strong>
+  <%= @character_class_armor_type.armor_type %>
+</p>
+
+<%= link_to 'Edit', edit_character_class_armor_type_path(@character_class_armor_type) %> |
+<%= link_to 'Back', character_class_armor_types_path %>

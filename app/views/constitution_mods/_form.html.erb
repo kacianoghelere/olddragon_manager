@@ -1,0 +1,33 @@
+<%= form_for(@constitution_mod) do |f| %>
+  <% if @constitution_mod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@constitution_mod.errors.count, "error") %> prohibited this constitution_mod from being saved:</h2>
+
+      <ul>
+      <% @constitution_mod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :hitpoints_mod %><br>
+    <%= f.number_field :hitpoints_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :protection_mod %><br>
+    <%= f.number_field :protection_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :resurrection_mod %><br>
+    <%= f.number_field :resurrection_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  skelleton_mod: MyString
+  zombie_mod: MyString
+  ghoul_mod: MyString
+  inhuman_mod: MyString
+  aparition_mod: MyString
+  mummy_mod: MyString
+  specter_mod: MyString
+  vampire_mod: MyString
+
+two:
+  level: 1
+  skelleton_mod: MyString
+  zombie_mod: MyString
+  ghoul_mod: MyString
+  inhuman_mod: MyString
+  aparition_mod: MyString
+  mummy_mod: MyString
+  specter_mod: MyString
+  vampire_mod: MyString

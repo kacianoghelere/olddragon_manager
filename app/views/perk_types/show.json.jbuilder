@@ -1,0 +1,1 @@
+json.partial! "perk_types/perk_type", perk_type: @perk_type

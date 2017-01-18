@@ -1,0 +1,65 @@
+<%= form_for(@intelligence_mod) do |f| %>
+  <% if @intelligence_mod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@intelligence_mod.errors.count, "error") %> prohibited this intelligence_mod from being saved:</h2>
+
+      <ul>
+      <% @intelligence_mod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :languages_mod %><br>
+    <%= f.number_field :languages_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :learn_magic_mod %><br>
+    <%= f.number_field :learn_magic_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_1_mod %><br>
+    <%= f.number_field :magic_circle_1_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_2_mod %><br>
+    <%= f.number_field :magic_circle_2_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_3_mod %><br>
+    <%= f.number_field :magic_circle_3_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_4_mod %><br>
+    <%= f.number_field :magic_circle_4_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_5_mod %><br>
+    <%= f.number_field :magic_circle_5_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_6_mod %><br>
+    <%= f.number_field :magic_circle_6_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_7_mod %><br>
+    <%= f.number_field :magic_circle_7_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_8_mod %><br>
+    <%= f.number_field :magic_circle_8_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_circle_9_mod %><br>
+    <%= f.number_field :magic_circle_9_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

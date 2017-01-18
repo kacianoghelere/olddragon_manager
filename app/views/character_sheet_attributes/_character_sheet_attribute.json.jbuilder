@@ -1,0 +1,2 @@
+json.extract! character_sheet_attribute, :id, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :created_at, :updated_at
+json.url character_sheet_attribute_url(character_sheet_attribute, format: :json)

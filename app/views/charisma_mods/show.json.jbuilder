@@ -1,0 +1,1 @@
+json.partial! "charisma_mods/charisma_mod", charisma_mod: @charisma_mod

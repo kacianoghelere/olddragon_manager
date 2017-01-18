@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @campain_journal.description %>
+</p>
+
+<p>
+  <strong>Idactive:</strong>
+  <%= @campain_journal.idactive %>
+</p>
+
+<p>
+  <strong>Log date:</strong>
+  <%= @campain_journal.log_date %>
+</p>
+
+<p>
+  <strong>Campain:</strong>
+  <%= @campain_journal.campain %>
+</p>
+
+<%= link_to 'Edit', edit_campain_journal_path(@campain_journal) %> |
+<%= link_to 'Back', campain_journals_path %>

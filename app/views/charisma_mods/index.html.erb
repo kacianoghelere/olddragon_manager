@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Charisma Mods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Followers mod</th>
+      <th>Reaction mod</th>
+      <th>Undead mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charisma_mods.each do |charisma_mod| %>
+      <tr>
+        <td><%= charisma_mod.value %></td>
+        <td><%= charisma_mod.followers_mod %></td>
+        <td><%= charisma_mod.reaction_mod %></td>
+        <td><%= charisma_mod.undead_mod %></td>
+        <td><%= link_to 'Show', charisma_mod %></td>
+        <td><%= link_to 'Edit', edit_charisma_mod_path(charisma_mod) %></td>
+        <td><%= link_to 'Destroy', charisma_mod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Charisma mod', new_charisma_mod_path %>

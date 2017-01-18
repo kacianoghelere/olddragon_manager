@@ -1,0 +1,41 @@
+<%= form_for(@character_journal) do |f| %>
+  <% if @character_journal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_journal.errors.count, "error") %> prohibited this character_journal from being saved:</h2>
+
+      <ul>
+      <% @character_journal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :current_level %><br>
+    <%= f.number_field :current_level %>
+  </div>
+  <div class="field">
+    <%= f.label :current_exp %><br>
+    <%= f.number_field :current_exp %>
+  </div>
+  <div class="field">
+    <%= f.label :idactive %><br>
+    <%= f.check_box :idactive %>
+  </div>
+  <div class="field">
+    <%= f.label :inc_date %><br>
+    <%= f.datetime_select :inc_date %>
+  </div>
+  <div class="field">
+    <%= f.label :character_sheet_id %><br>
+    <%= f.text_field :character_sheet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :alignment_id %><br>
+    <%= f.text_field :alignment_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

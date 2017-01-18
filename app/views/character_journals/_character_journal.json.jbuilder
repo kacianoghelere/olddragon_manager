@@ -1,0 +1,2 @@
+json.extract! character_journal, :id, :current_level, :current_exp, :idactive, :inc_date, :character_sheet_id, :alignment_id, :created_at, :updated_at
+json.url character_journal_url(character_journal, format: :json)

@@ -1,0 +1,1 @@
+json.array! @campain_members, partial: 'campain_members/campain_member', as: :campain_member

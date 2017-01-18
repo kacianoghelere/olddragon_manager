@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Races</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Min height</th>
+      <th>Max height</th>
+      <th>Min weight</th>
+      <th>Max weight</th>
+      <th>Maturity</th>
+      <th>Max age</th>
+      <th>Movement base</th>
+      <th>Armor class mod</th>
+      <th>Str mod</th>
+      <th>Dex mod</th>
+      <th>Cons mod</th>
+      <th>Int mod</th>
+      <th>Wis mod</th>
+      <th>Char mod</th>
+      <th>Alignment</th>
+      <th>Dice</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_races.each do |character_race| %>
+      <tr>
+        <td><%= character_race.name %></td>
+        <td><%= character_race.min_height %></td>
+        <td><%= character_race.max_height %></td>
+        <td><%= character_race.min_weight %></td>
+        <td><%= character_race.max_weight %></td>
+        <td><%= character_race.maturity %></td>
+        <td><%= character_race.max_age %></td>
+        <td><%= character_race.movement_base %></td>
+        <td><%= character_race.armor_class_mod %></td>
+        <td><%= character_race.str_mod %></td>
+        <td><%= character_race.dex_mod %></td>
+        <td><%= character_race.cons_mod %></td>
+        <td><%= character_race.int_mod %></td>
+        <td><%= character_race.wis_mod %></td>
+        <td><%= character_race.char_mod %></td>
+        <td><%= character_race.alignment %></td>
+        <td><%= character_race.dice %></td>
+        <td><%= character_race.user %></td>
+        <td><%= link_to 'Show', character_race %></td>
+        <td><%= link_to 'Edit', edit_character_race_path(character_race) %></td>
+        <td><%= link_to 'Destroy', character_race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character race', new_character_race_path %>

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Class Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Magic</th>
+      <th>Protection</th>
+      <th>Key attr</th>
+      <th>Can bane undead</th>
+      <th>Has thief talents</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_class_types.each do |character_class_type| %>
+      <tr>
+        <td><%= character_class_type.name %></td>
+        <td><%= character_class_type.magic %></td>
+        <td><%= character_class_type.protection %></td>
+        <td><%= character_class_type.key_attr %></td>
+        <td><%= character_class_type.can_bane_undead %></td>
+        <td><%= character_class_type.has_thief_talents %></td>
+        <td><%= link_to 'Show', character_class_type %></td>
+        <td><%= link_to 'Edit', edit_character_class_type_path(character_class_type) %></td>
+        <td><%= link_to 'Destroy', character_class_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character class type', new_character_class_type_path %>

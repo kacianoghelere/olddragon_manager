@@ -1,0 +1,33 @@
+<%= form_for(@perk) do |f| %>
+  <% if @perk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@perk.errors.count, "error") %> prohibited this perk from being saved:</h2>
+
+      <ul>
+      <% @perk.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :perk_type_id %><br>
+    <%= f.text_field :perk_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

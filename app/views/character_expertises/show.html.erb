@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character sheet:</strong>
+  <%= @character_expertise.character_sheet %>
+</p>
+
+<p>
+  <strong>Expertise:</strong>
+  <%= @character_expertise.expertise %>
+</p>
+
+<%= link_to 'Edit', edit_character_expertise_path(@character_expertise) %> |
+<%= link_to 'Back', character_expertises_path %>

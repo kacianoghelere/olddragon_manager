@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  magic_circle_1: 1
+  magic_circle_2: 1
+  magic_circle_3: 1
+  magic_circle_4: 1
+  magic_circle_5: 1
+  magic_circle_6: 1
+  magic_circle_7: 1
+  magic_circle_8: 1
+  magic_circle_9: 1
+  character_class_id: 
+
+two:
+  level: 1
+  magic_circle_1: 1
+  magic_circle_2: 1
+  magic_circle_3: 1
+  magic_circle_4: 1
+  magic_circle_5: 1
+  magic_circle_6: 1
+  magic_circle_7: 1
+  magic_circle_8: 1
+  magic_circle_9: 1
+  character_class_id: 

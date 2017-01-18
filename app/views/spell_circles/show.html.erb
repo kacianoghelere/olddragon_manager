@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Circle:</strong>
+  <%= @spell_circle.circle %>
+</p>
+
+<p>
+  <strong>Spell type:</strong>
+  <%= @spell_circle.spell_type %>
+</p>
+
+<%= link_to 'Edit', edit_spell_circle_path(@spell_circle) %> |
+<%= link_to 'Back', spell_circles_path %>

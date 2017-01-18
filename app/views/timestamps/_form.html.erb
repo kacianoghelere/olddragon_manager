@@ -1,0 +1,25 @@
+<%= form_for(@timestamp) do |f| %>
+  <% if @timestamp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@timestamp.errors.count, "error") %> prohibited this timestamp from being saved:</h2>
+
+      <ul>
+      <% @timestamp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :create_time %><br>
+    <%= f.datetime_select :create_time %>
+  </div>
+  <div class="field">
+    <%= f.label :update_time %><br>
+    <%= f.datetime_select :update_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

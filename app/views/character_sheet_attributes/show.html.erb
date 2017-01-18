@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Strength:</strong>
+  <%= @character_sheet_attribute.strength %>
+</p>
+
+<p>
+  <strong>Dexterity:</strong>
+  <%= @character_sheet_attribute.dexterity %>
+</p>
+
+<p>
+  <strong>Constitution:</strong>
+  <%= @character_sheet_attribute.constitution %>
+</p>
+
+<p>
+  <strong>Intelligence:</strong>
+  <%= @character_sheet_attribute.intelligence %>
+</p>
+
+<p>
+  <strong>Wisdom:</strong>
+  <%= @character_sheet_attribute.wisdom %>
+</p>
+
+<p>
+  <strong>Charisma:</strong>
+  <%= @character_sheet_attribute.charisma %>
+</p>
+
+<%= link_to 'Edit', edit_character_sheet_attribute_path(@character_sheet_attribute) %> |
+<%= link_to 'Back', character_sheet_attributes_path %>

@@ -1,0 +1,2 @@
+module CharacterClassWeaponTypesHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @character_class_spell_type.character_class %>
+</p>
+
+<p>
+  <strong>Spell type:</strong>
+  <%= @character_class_spell_type.spell_type %>
+</p>
+
+<%= link_to 'Edit', edit_character_class_spell_type_path(@character_class_spell_type) %> |
+<%= link_to 'Back', character_class_spell_types_path %>

@@ -1,0 +1,1 @@
+json.partial! "character_sheet_attributes/character_sheet_attribute", character_sheet_attribute: @character_sheet_attribute

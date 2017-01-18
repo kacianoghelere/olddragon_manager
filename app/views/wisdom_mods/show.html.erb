@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @wisdom_mod.value %>
+</p>
+
+<p>
+  <strong>Protection mod:</strong>
+  <%= @wisdom_mod.protection_mod %>
+</p>
+
+<p>
+  <strong>Magic cicle 1 mod:</strong>
+  <%= @wisdom_mod.magic_cicle_1_mod %>
+</p>
+
+<p>
+  <strong>Magic cicle 2 mod:</strong>
+  <%= @wisdom_mod.magic_cicle_2_mod %>
+</p>
+
+<p>
+  <strong>Magic cicle 3 mod:</strong>
+  <%= @wisdom_mod.magic_cicle_3_mod %>
+</p>
+
+<%= link_to 'Edit', edit_wisdom_mod_path(@wisdom_mod) %> |
+<%= link_to 'Back', wisdom_mods_path %>

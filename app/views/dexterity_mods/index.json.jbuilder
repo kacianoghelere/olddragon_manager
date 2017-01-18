@@ -1,0 +1,1 @@
+json.array! @dexterity_mods, partial: 'dexterity_mods/dexterity_mod', as: :dexterity_mod

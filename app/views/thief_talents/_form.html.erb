@@ -1,0 +1,53 @@
+<%= form_for(@thief_talent) do |f| %>
+  <% if @thief_talent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thief_talent.errors.count, "error") %> prohibited this thief_talent from being saved:</h2>
+
+      <ul>
+      <% @thief_talent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :lockpick %><br>
+    <%= f.number_field :lockpick %>
+  </div>
+  <div class="field">
+    <%= f.label :find_traps %><br>
+    <%= f.number_field :find_traps %>
+  </div>
+  <div class="field">
+    <%= f.label :climb %><br>
+    <%= f.number_field :climb %>
+  </div>
+  <div class="field">
+    <%= f.label :silent_movement %><br>
+    <%= f.number_field :silent_movement %>
+  </div>
+  <div class="field">
+    <%= f.label :stealth %><br>
+    <%= f.number_field :stealth %>
+  </div>
+  <div class="field">
+    <%= f.label :pickpocket %><br>
+    <%= f.number_field :pickpocket %>
+  </div>
+  <div class="field">
+    <%= f.label :hear_noises %><br>
+    <%= f.text_field :hear_noises %>
+  </div>
+  <div class="field">
+    <%= f.label :backstab %><br>
+    <%= f.text_field :backstab %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

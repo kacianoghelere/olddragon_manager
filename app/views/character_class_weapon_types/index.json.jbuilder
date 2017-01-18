@@ -1,0 +1,1 @@
+json.array! @character_class_weapon_types, partial: 'character_class_weapon_types/character_class_weapon_type', as: :character_class_weapon_type

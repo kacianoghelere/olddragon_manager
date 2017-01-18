@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @strength_mod.value %>
+</p>
+
+<p>
+  <strong>Attack mod:</strong>
+  <%= @strength_mod.attack_mod %>
+</p>
+
+<p>
+  <strong>Damage mod:</strong>
+  <%= @strength_mod.damage_mod %>
+</p>
+
+<%= link_to 'Edit', edit_strength_mod_path(@strength_mod) %> |
+<%= link_to 'Back', strength_mods_path %>

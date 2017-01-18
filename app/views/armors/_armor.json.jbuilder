@@ -1,0 +1,2 @@
+json.extract! armor, :id, :name, :description, :armor_class, :movement_reduction, :price, :alignment_id, :armor_type_id, :origin_id, :user_id, :created_at, :updated_at
+json.url armor_url(armor, format: :json)

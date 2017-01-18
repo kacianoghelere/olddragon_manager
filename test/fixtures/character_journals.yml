@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_level: 1
+  current_exp: 1
+  idactive: false
+  inc_date: 2017-01-18 16:43:03
+  character_sheet_id: 
+  alignment_id: 
+
+two:
+  current_level: 1
+  current_exp: 1
+  idactive: false
+  inc_date: 2017-01-18 16:43:03
+  character_sheet_id: 
+  alignment_id: 

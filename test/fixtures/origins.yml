@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  variation: MyString
+  bonus: 1
+
+two:
+  name: MyString
+  variation: MyString
+  bonus: 1

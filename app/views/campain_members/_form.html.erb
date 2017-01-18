@@ -1,0 +1,29 @@
+<%= form_for(@campain_member) do |f| %>
+  <% if @campain_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campain_member.errors.count, "error") %> prohibited this campain_member from being saved:</h2>
+
+      <ul>
+      <% @campain_member.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :campain_id %><br>
+    <%= f.text_field :campain_id %>
+  </div>
+  <div class="field">
+    <%= f.label :character_sheet_id %><br>
+    <%= f.text_field :character_sheet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :idactive %><br>
+    <%= f.check_box :idactive %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

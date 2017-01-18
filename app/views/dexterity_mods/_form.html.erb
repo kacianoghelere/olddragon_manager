@@ -1,0 +1,57 @@
+<%= form_for(@dexterity_mod) do |f| %>
+  <% if @dexterity_mod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dexterity_mod.errors.count, "error") %> prohibited this dexterity_mod from being saved:</h2>
+
+      <ul>
+      <% @dexterity_mod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_mod %><br>
+    <%= f.number_field :attack_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :surprise_mod %><br>
+    <%= f.number_field :surprise_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :armor_class_mod %><br>
+    <%= f.number_field :armor_class_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :protection_mod %><br>
+    <%= f.number_field :protection_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :find_traps_mod %><br>
+    <%= f.number_field :find_traps_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :silent_movement_mod %><br>
+    <%= f.number_field :silent_movement_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :lockpick_mod %><br>
+    <%= f.number_field :lockpick_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :stealth_mod %><br>
+    <%= f.number_field :stealth_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :pickpocket_mod %><br>
+    <%= f.number_field :pickpocket_mod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

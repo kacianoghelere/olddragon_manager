@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @charisma_mod.value %>
+</p>
+
+<p>
+  <strong>Followers mod:</strong>
+  <%= @charisma_mod.followers_mod %>
+</p>
+
+<p>
+  <strong>Reaction mod:</strong>
+  <%= @charisma_mod.reaction_mod %>
+</p>
+
+<p>
+  <strong>Undead mod:</strong>
+  <%= @charisma_mod.undead_mod %>
+</p>
+
+<%= link_to 'Edit', edit_charisma_mod_path(@charisma_mod) %> |
+<%= link_to 'Back', charisma_mods_path %>

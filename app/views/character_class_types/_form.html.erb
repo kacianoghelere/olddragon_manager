@@ -1,0 +1,41 @@
+<%= form_for(@character_class_type) do |f| %>
+  <% if @character_class_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_class_type.errors.count, "error") %> prohibited this character_class_type from being saved:</h2>
+
+      <ul>
+      <% @character_class_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :magic %><br>
+    <%= f.check_box :magic %>
+  </div>
+  <div class="field">
+    <%= f.label :protection %><br>
+    <%= f.number_field :protection %>
+  </div>
+  <div class="field">
+    <%= f.label :key_attr %><br>
+    <%= f.text_field :key_attr %>
+  </div>
+  <div class="field">
+    <%= f.label :can_bane_undead %><br>
+    <%= f.check_box :can_bane_undead %>
+  </div>
+  <div class="field">
+    <%= f.label :has_thief_talents %><br>
+    <%= f.check_box :has_thief_talents %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

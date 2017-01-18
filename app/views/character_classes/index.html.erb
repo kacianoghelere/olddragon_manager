@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Character Classes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Dice</th>
+      <th>Perk</th>
+      <th>Character class type</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_classes.each do |character_class| %>
+      <tr>
+        <td><%= character_class.name %></td>
+        <td><%= character_class.description %></td>
+        <td><%= character_class.dice %></td>
+        <td><%= character_class.perk %></td>
+        <td><%= character_class.character_class_type %></td>
+        <td><%= character_class.user %></td>
+        <td><%= link_to 'Show', character_class %></td>
+        <td><%= link_to 'Edit', edit_character_class_path(character_class) %></td>
+        <td><%= link_to 'Destroy', character_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character class', new_character_class_path %>

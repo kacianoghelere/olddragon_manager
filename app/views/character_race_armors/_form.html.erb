@@ -1,0 +1,25 @@
+<%= form_for(@character_race_armor) do |f| %>
+  <% if @character_race_armor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_race_armor.errors.count, "error") %> prohibited this character_race_armor from being saved:</h2>
+
+      <ul>
+      <% @character_race_armor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :armor_type_id %><br>
+    <%= f.text_field :armor_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :character_race_id %><br>
+    <%= f.text_field :character_race_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

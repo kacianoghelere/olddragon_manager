@@ -1,0 +1,25 @@
+<%= form_for(@character_expertise) do |f| %>
+  <% if @character_expertise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_expertise.errors.count, "error") %> prohibited this character_expertise from being saved:</h2>
+
+      <ul>
+      <% @character_expertise.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :character_sheet_id %><br>
+    <%= f.text_field :character_sheet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expertise_id %><br>
+    <%= f.text_field :expertise_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

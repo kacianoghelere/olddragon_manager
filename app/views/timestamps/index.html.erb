@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Timestamps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Create time</th>
+      <th>Update time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @timestamps.each do |timestamp| %>
+      <tr>
+        <td><%= timestamp.create_time %></td>
+        <td><%= timestamp.update_time %></td>
+        <td><%= link_to 'Show', timestamp %></td>
+        <td><%= link_to 'Edit', edit_timestamp_path(timestamp) %></td>
+        <td><%= link_to 'Destroy', timestamp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Timestamp', new_timestamp_path %>

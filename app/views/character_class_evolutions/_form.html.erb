@@ -1,0 +1,49 @@
+<%= form_for(@character_class_evolution) do |f| %>
+  <% if @character_class_evolution.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_class_evolution.errors.count, "error") %> prohibited this character_class_evolution from being saved:</h2>
+
+      <ul>
+      <% @character_class_evolution.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :exp %><br>
+    <%= f.number_field :exp %>
+  </div>
+  <div class="field">
+    <%= f.label :life_amount %><br>
+    <%= f.number_field :life_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :plus_life %><br>
+    <%= f.check_box :plus_life %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_base %><br>
+    <%= f.number_field :attack_base %>
+  </div>
+  <div class="field">
+    <%= f.label :attack_base2 %><br>
+    <%= f.number_field :attack_base2 %>
+  </div>
+  <div class="field">
+    <%= f.label :protection_mod %><br>
+    <%= f.number_field :protection_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :character_class_id %><br>
+    <%= f.text_field :character_class_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

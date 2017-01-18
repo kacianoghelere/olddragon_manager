@@ -1,0 +1,1 @@
+json.array! @constitution_mods, partial: 'constitution_mods/constitution_mod', as: :constitution_mod

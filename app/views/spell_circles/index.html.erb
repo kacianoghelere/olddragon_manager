@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Spell Circles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Circle</th>
+      <th>Spell type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spell_circles.each do |spell_circle| %>
+      <tr>
+        <td><%= spell_circle.circle %></td>
+        <td><%= spell_circle.spell_type %></td>
+        <td><%= link_to 'Show', spell_circle %></td>
+        <td><%= link_to 'Edit', edit_spell_circle_path(spell_circle) %></td>
+        <td><%= link_to 'Destroy', spell_circle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Spell circle', new_spell_circle_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @character_class_evolution.level %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @character_class_evolution.exp %>
+</p>
+
+<p>
+  <strong>Life amount:</strong>
+  <%= @character_class_evolution.life_amount %>
+</p>
+
+<p>
+  <strong>Plus life:</strong>
+  <%= @character_class_evolution.plus_life %>
+</p>
+
+<p>
+  <strong>Attack base:</strong>
+  <%= @character_class_evolution.attack_base %>
+</p>
+
+<p>
+  <strong>Attack base2:</strong>
+  <%= @character_class_evolution.attack_base2 %>
+</p>
+
+<p>
+  <strong>Protection mod:</strong>
+  <%= @character_class_evolution.protection_mod %>
+</p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @character_class_evolution.character_class %>
+</p>
+
+<%= link_to 'Edit', edit_character_class_evolution_path(@character_class_evolution) %> |
+<%= link_to 'Back', character_class_evolutions_path %>

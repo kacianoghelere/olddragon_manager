@@ -1,0 +1,1 @@
+json.array! @spell_types, partial: 'spell_types/spell_type', as: :spell_type

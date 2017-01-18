@@ -1,0 +1,1 @@
+json.partial! "strength_mods/strength_mod", strength_mod: @strength_mod

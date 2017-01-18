@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @constitution_mod.value %>
+</p>
+
+<p>
+  <strong>Hitpoints mod:</strong>
+  <%= @constitution_mod.hitpoints_mod %>
+</p>
+
+<p>
+  <strong>Protection mod:</strong>
+  <%= @constitution_mod.protection_mod %>
+</p>
+
+<p>
+  <strong>Resurrection mod:</strong>
+  <%= @constitution_mod.resurrection_mod %>
+</p>
+
+<%= link_to 'Edit', edit_constitution_mod_path(@constitution_mod) %> |
+<%= link_to 'Back', constitution_mods_path %>

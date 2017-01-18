@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Weapons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Initiative</th>
+      <th>Ranged</th>
+      <th>Range</th>
+      <th>Damage</th>
+      <th>Weight</th>
+      <th>Price</th>
+      <th>Alignment</th>
+      <th>Dice</th>
+      <th>Material type</th>
+      <th>Origin</th>
+      <th>User</th>
+      <th>Weapon type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weapons.each do |weapon| %>
+      <tr>
+        <td><%= weapon.name %></td>
+        <td><%= weapon.description %></td>
+        <td><%= weapon.initiative %></td>
+        <td><%= weapon.ranged %></td>
+        <td><%= weapon.range %></td>
+        <td><%= weapon.damage %></td>
+        <td><%= weapon.weight %></td>
+        <td><%= weapon.price %></td>
+        <td><%= weapon.alignment %></td>
+        <td><%= weapon.dice %></td>
+        <td><%= weapon.material_type %></td>
+        <td><%= weapon.origin %></td>
+        <td><%= weapon.user %></td>
+        <td><%= weapon.weapon_type %></td>
+        <td><%= link_to 'Show', weapon %></td>
+        <td><%= link_to 'Edit', edit_weapon_path(weapon) %></td>
+        <td><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Weapon', new_weapon_path %>

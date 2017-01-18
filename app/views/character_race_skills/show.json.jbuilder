@@ -1,0 +1,1 @@
+json.partial! "character_race_skills/character_race_skill", character_race_skill: @character_race_skill

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Undead Banes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Skelleton mod</th>
+      <th>Zombie mod</th>
+      <th>Ghoul mod</th>
+      <th>Inhuman mod</th>
+      <th>Aparition mod</th>
+      <th>Mummy mod</th>
+      <th>Specter mod</th>
+      <th>Vampire mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @undead_banes.each do |undead_bane| %>
+      <tr>
+        <td><%= undead_bane.level %></td>
+        <td><%= undead_bane.skelleton_mod %></td>
+        <td><%= undead_bane.zombie_mod %></td>
+        <td><%= undead_bane.ghoul_mod %></td>
+        <td><%= undead_bane.inhuman_mod %></td>
+        <td><%= undead_bane.aparition_mod %></td>
+        <td><%= undead_bane.mummy_mod %></td>
+        <td><%= undead_bane.specter_mod %></td>
+        <td><%= undead_bane.vampire_mod %></td>
+        <td><%= link_to 'Show', undead_bane %></td>
+        <td><%= link_to 'Edit', edit_undead_bane_path(undead_bane) %></td>
+        <td><%= link_to 'Destroy', undead_bane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Undead bane', new_undead_bane_path %>

@@ -1,0 +1,1 @@
+json.array! @character_race_languages, partial: 'character_race_languages/character_race_language', as: :character_race_language

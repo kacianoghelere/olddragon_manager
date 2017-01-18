@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Current level:</strong>
+  <%= @character_journal.current_level %>
+</p>
+
+<p>
+  <strong>Current exp:</strong>
+  <%= @character_journal.current_exp %>
+</p>
+
+<p>
+  <strong>Idactive:</strong>
+  <%= @character_journal.idactive %>
+</p>
+
+<p>
+  <strong>Inc date:</strong>
+  <%= @character_journal.inc_date %>
+</p>
+
+<p>
+  <strong>Character sheet:</strong>
+  <%= @character_journal.character_sheet %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @character_journal.alignment %>
+</p>
+
+<%= link_to 'Edit', edit_character_journal_path(@character_journal) %> |
+<%= link_to 'Back', character_journals_path %>

@@ -1,0 +1,1 @@
+json.partial! "spell_types/spell_type", spell_type: @spell_type

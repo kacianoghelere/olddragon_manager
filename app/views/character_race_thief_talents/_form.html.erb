@@ -1,0 +1,57 @@
+<%= form_for(@character_race_thief_talent) do |f| %>
+  <% if @character_race_thief_talent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_race_thief_talent.errors.count, "error") %> prohibited this character_race_thief_talent from being saved:</h2>
+
+      <ul>
+      <% @character_race_thief_talent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :lockpick_mod %><br>
+    <%= f.number_field :lockpick_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :find_traps_mod %><br>
+    <%= f.number_field :find_traps_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :climb_mod %><br>
+    <%= f.number_field :climb_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :silent_movement_mod %><br>
+    <%= f.number_field :silent_movement_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :stealth_mod %><br>
+    <%= f.number_field :stealth_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :pickpocket_mod %><br>
+    <%= f.number_field :pickpocket_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :hear_noises_mod %><br>
+    <%= f.text_field :hear_noises_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :backstab_mod %><br>
+    <%= f.text_field :backstab_mod %>
+  </div>
+  <div class="field">
+    <%= f.label :character_race_id %><br>
+    <%= f.text_field :character_race_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

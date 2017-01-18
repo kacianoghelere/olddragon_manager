@@ -1,0 +1,1 @@
+json.partial! "undead_banes/undead_bane", undead_bane: @undead_bane

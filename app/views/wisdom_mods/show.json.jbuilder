@@ -1,0 +1,1 @@
+json.partial! "wisdom_mods/wisdom_mod", wisdom_mod: @wisdom_mod

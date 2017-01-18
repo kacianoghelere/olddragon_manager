@@ -1,0 +1,1 @@
+json.array! @character_class_item_types, partial: 'character_class_item_types/character_class_item_type', as: :character_class_item_type

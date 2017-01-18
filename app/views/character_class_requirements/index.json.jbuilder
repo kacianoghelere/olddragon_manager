@@ -1,0 +1,1 @@
+json.array! @character_class_requirements, partial: 'character_class_requirements/character_class_requirement', as: :character_class_requirement

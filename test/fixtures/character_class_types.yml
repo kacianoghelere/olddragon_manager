@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  magic: false
+  protection: 1
+  key_attr: MyString
+  can_bane_undead: false
+  has_thief_talents: false
+
+two:
+  name: MyString
+  magic: false
+  protection: 1
+  key_attr: MyString
+  can_bane_undead: false
+  has_thief_talents: false

@@ -1,0 +1,1 @@
+json.partial! "campain_journals/campain_journal", campain_journal: @campain_journal

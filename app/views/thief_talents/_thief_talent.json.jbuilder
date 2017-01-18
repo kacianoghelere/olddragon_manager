@@ -1,0 +1,2 @@
+json.extract! thief_talent, :id, :level, :lockpick, :find_traps, :climb, :silent_movement, :stealth, :pickpocket, :hear_noises, :backstab, :created_at, :updated_at
+json.url thief_talent_url(thief_talent, format: :json)

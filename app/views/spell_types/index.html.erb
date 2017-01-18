@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Spell Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spell_types.each do |spell_type| %>
+      <tr>
+        <td><%= spell_type.name %></td>
+        <td><%= link_to 'Show', spell_type %></td>
+        <td><%= link_to 'Edit', edit_spell_type_path(spell_type) %></td>
+        <td><%= link_to 'Destroy', spell_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Spell type', new_spell_type_path %>

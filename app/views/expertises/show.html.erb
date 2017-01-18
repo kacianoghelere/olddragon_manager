@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @expertise.name %>
+</p>
+
+<p>
+  <strong>Modifier:</strong>
+  <%= @expertise.modifier %>
+</p>
+
+<p>
+  <strong>Attr:</strong>
+  <%= @expertise.attr %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @expertise.user %>
+</p>
+
+<%= link_to 'Edit', edit_expertise_path(@expertise) %> |
+<%= link_to 'Back', expertises_path %>

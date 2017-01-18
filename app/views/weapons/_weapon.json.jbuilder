@@ -1,0 +1,2 @@
+json.extract! weapon, :id, :name, :description, :initiative, :ranged, :range, :damage, :weight, :price, :alignment_id, :dice_id, :material_type_id, :origin_id, :user_id, :weapon_type_id, :created_at, :updated_at
+json.url weapon_url(weapon, format: :json)

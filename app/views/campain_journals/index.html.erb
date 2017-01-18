@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Campain Journals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Idactive</th>
+      <th>Log date</th>
+      <th>Campain</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campain_journals.each do |campain_journal| %>
+      <tr>
+        <td><%= campain_journal.description %></td>
+        <td><%= campain_journal.idactive %></td>
+        <td><%= campain_journal.log_date %></td>
+        <td><%= campain_journal.campain %></td>
+        <td><%= link_to 'Show', campain_journal %></td>
+        <td><%= link_to 'Edit', edit_campain_journal_path(campain_journal) %></td>
+        <td><%= link_to 'Destroy', campain_journal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Campain journal', new_campain_journal_path %>

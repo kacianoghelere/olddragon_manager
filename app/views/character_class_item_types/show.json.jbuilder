@@ -1,0 +1,1 @@
+json.partial! "character_class_item_types/character_class_item_type", character_class_item_type: @character_class_item_type

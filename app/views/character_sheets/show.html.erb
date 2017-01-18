@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @character_sheet.name %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @character_sheet.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @character_sheet.height %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @character_sheet.age %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @character_sheet.description %>
+</p>
+
+<p>
+  <strong>Character class:</strong>
+  <%= @character_sheet.character_class %>
+</p>
+
+<p>
+  <strong>Character race:</strong>
+  <%= @character_sheet.character_race %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @character_sheet.user %>
+</p>
+
+<%= link_to 'Edit', edit_character_sheet_path(@character_sheet) %> |
+<%= link_to 'Back', character_sheets_path %>

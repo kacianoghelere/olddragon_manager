@@ -1,0 +1,1 @@
+json.array! @character_races, partial: 'character_races/character_race', as: :character_race

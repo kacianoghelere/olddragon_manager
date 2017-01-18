@@ -1,0 +1,2 @@
+json.extract! character_class_evolution, :id, :level, :exp, :life_amount, :plus_life, :attack_base, :attack_base2, :protection_mod, :character_class_id, :created_at, :updated_at
+json.url character_class_evolution_url(character_class_evolution, format: :json)

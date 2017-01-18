@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @armor.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @armor.description %>
+</p>
+
+<p>
+  <strong>Armor class:</strong>
+  <%= @armor.armor_class %>
+</p>
+
+<p>
+  <strong>Movement reduction:</strong>
+  <%= @armor.movement_reduction %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @armor.price %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @armor.alignment %>
+</p>
+
+<p>
+  <strong>Armor type:</strong>
+  <%= @armor.armor_type %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @armor.origin %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @armor.user %>
+</p>
+
+<%= link_to 'Edit', edit_armor_path(@armor) %> |
+<%= link_to 'Back', armors_path %>

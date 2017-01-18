@@ -1,0 +1,1 @@
+json.array! @thief_talents, partial: 'thief_talents/thief_talent', as: :thief_talent

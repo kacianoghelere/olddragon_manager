@@ -1,0 +1,1 @@
+json.array! @wisdom_mods, partial: 'wisdom_mods/wisdom_mod', as: :wisdom_mod
